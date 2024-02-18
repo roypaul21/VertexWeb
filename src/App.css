@@ -268,10 +268,31 @@ body {
 
 .home-div-section{
   width: 100%;
-  height: 50vh;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
 }
 
-/*HOME DIVISION SECTION CSS*/ 
+.home-div-section-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-div-card-box {
+  filter: drop-shadow(-2px 8px 7px rgba(0, 0, 0, 0.2));
+}
+
+
+
+/*FOOTER SECTION CSS*/ 
 .footer-section {
   width: 100%;
   height: 100%;
