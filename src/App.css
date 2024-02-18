@@ -224,13 +224,14 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-right:6rem ;
 }
 
 .home-second-seciton-shape > div {
   position: absolute;
   box-sizing: border-box;
-  width: 16%;
-  height: 33%;
+  width: clamp(10rem,15vw,18rem);
+  height: clamp(10rem,15vw,18rem);
   border: 2px solid rgba(0, 0, 0, 0.8);
   overflow: hidden;
   
