@@ -16,7 +16,7 @@ export default function Home() {
             delay: 0,
             duration: 400,
             easing: 'ease-in-sine',
-            once: false,
+            once: true,
             mirror: false,
         })
     },[])

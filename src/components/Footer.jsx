@@ -22,8 +22,8 @@ export default function Footer() {
             delay: 0,
             duration: 400,
             easing: 'ease-in-sine',
-            once: false,
-            mirror: true,
+            once: true,
+            mirror: false,
         })
     },[])
     return(
