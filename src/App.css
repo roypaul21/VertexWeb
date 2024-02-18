@@ -32,6 +32,8 @@ body {
   align-items: center !important;
   text-align: center !important;
   width: 100%;
+  font-stretch: expanded;
+  word-wrap: break-word; 
 }
 
 .navbar-contact-us {
@@ -39,7 +41,9 @@ body {
   text-align: center !important;
   align-items: flex-end !important;
   justify-content: flex-end !important;
-  width: 100%;
+  font-stretch: expanded;
+  word-wrap: break-word;
+  width: 20%; 
 }
 
 @media screen and (max-width: 992px) {
@@ -48,6 +52,7 @@ body {
     justify-content: center !important;
     text-align: center !important;
     background-color: whitesmoke;
+    width: 100%;
   }
 }
 
@@ -88,12 +93,12 @@ body {
 }
 
 .hero-section-header > h1 {
-  font-size: 7rem;
+  font-size: clamp(4rem,7.5vw,8rem);
   font-weight: 800;
 }
 
 .hero-section-header-shadow > h1 {
-  font-size: 7rem;
+  font-size: clamp(4rem,7.5vw,8rem);;
   font-weight: 800;
   opacity: 0.2;
   transform: scaleY(-1);
@@ -104,6 +109,7 @@ body {
    flex-direction: row;
    gap: 1rem;
    justify-content: center;
+   box-sizing: border-box;
 }
 
 .hero-section-btn > button {
@@ -115,6 +121,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   background-color: #2B2B2B;
+  box-sizing: border-box;
 }
 
 .hero-section-btn > button:hover {
@@ -158,6 +165,7 @@ body {
   justify-content: center;
   align-items: center;
   gap:1rem;
+  box-sizing: border-box;
 }
 
 .hero-section-vid-column:nth-child(2) {
@@ -204,7 +212,7 @@ body {
 }
 
 .home-second-seciton-txt > h1 {
-  font-size: 6rem;
+  font-size: clamp(4rem,6.5vw,10rem);
   letter-spacing: 2rem;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -220,7 +228,8 @@ body {
 
 .home-second-seciton-shape > div {
   position: absolute;
-  width: 17%;
+  box-sizing: border-box;
+  width: 16%;
   height: 33%;
   border: 2px solid rgba(0, 0, 0, 0.8);
   overflow: hidden;
