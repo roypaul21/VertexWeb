@@ -4,6 +4,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import HomeSecondSection from "./HomeSecondSection"
 import HomeDivisionSection from "./HomeDivisionSection"
+import HomePartnersSection from "./HomePartnersSection"
 
 export default function Home() {
     useEffect(() => {
@@ -13,10 +14,10 @@ export default function Home() {
             animatedClassName: 'aos-animate',
             offset: 120, 
             delay: 0,
-            duration: 350,
+            duration: 400,
             easing: 'ease-in-sine',
             once: false,
-            mirror: true,
+            mirror: false,
         })
     },[])
     return(
@@ -24,6 +25,7 @@ export default function Home() {
          <HeroSection />
          <HomeSecondSection />
          <HomeDivisionSection />
+         <HomePartnersSection />
         </>
     )
 }

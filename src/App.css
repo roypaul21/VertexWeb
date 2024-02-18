@@ -100,7 +100,7 @@ body {
 .hero-section-header-shadow > h1 {
   font-size: clamp(4rem,7.5vw,8rem);;
   font-weight: 800;
-  opacity: 0.2;
+  opacity: 0.18;
   transform: scaleY(-1);
 }
 
@@ -158,7 +158,7 @@ body {
 
 .hero-section-vid-column {
   width: 90%;
-  height: 9rem;
+  height: clamp(7rem, 19.6vh, 11rem);
   background-color: none;
   display: flex;
   flex-direction: row;
@@ -190,12 +190,12 @@ body {
 
 .container-vid-big {
   height: 100%;
-  width: 60%;
+  width: clamp(24rem, 27vw, 30rem);
 }
 
 .container-vid-small {
   height: 100%;
-  width: 27.5%;
+  width: clamp(9rem,12vw,15rem);
 }
 
 
@@ -288,6 +288,55 @@ body {
 
 .home-div-card-box {
   filter: drop-shadow(-2px 8px 7px rgba(0, 0, 0, 0.2));
+}
+
+.card-box-anim {
+  animation: Wave 2s infinite;
+}
+
+@keyframes Wave {
+  40%{
+       transform: translateY(10px);
+  }
+}
+
+
+/*HOME PARTNERS SECTION CSS*/ 
+.home-part-section {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0 10rem 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.home-part-section-content{
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.home-part-section-container {
+  display: inline-block;
+  animation: slide 10s infinite linear;
+}
+
+.home-part-section-container > img {
+  width: 12vw;
+  margin: 0 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 
