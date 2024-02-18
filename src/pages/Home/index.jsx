@@ -13,7 +13,7 @@ export default function Home() {
             animatedClassName: 'aos-animate',
             offset: 120, 
             delay: 0,
-            duration: 400,
+            duration: 350,
             easing: 'ease-in-sine',
             once: false,
             mirror: true,
