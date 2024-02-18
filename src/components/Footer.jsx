@@ -27,7 +27,7 @@ export default function Footer() {
         })
     },[])
     return(
-        <section className="footer-section">
+        <section className="footer-section" id="footerSection">
             <div className="footer-section-content">
                 <div className="footer-section-git">
                     <div className="footer-section-header" data-aos="fade-down" >

@@ -84,6 +84,30 @@ body {
   padding-top: 0rem;
 }
 
+.hero-section-header-container{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.hero-section-text {
+  margin-top: 1.9rem;
+  display: flex;
+}
+
+.hero-section-text > p{
+  writing-mode: vertical-rl;
+  margin: 0;
+  font-size:clamp(.5rem, 1.2vw, 2rem);
+  letter-spacing: 5px;
+  padding: 0;
+  font-weight: 500;
+  color: black;
+}
+
+.hero-section-text > p:nth-child(2) {
+  color: red;
+}
+
 .hero-section-header {
   display: flex;
   flex-direction: column;
@@ -128,7 +152,7 @@ body {
   background-color: #555555;
 }
 
-.hero-section-btn > button:nth-child(2):hover {
+#home-section-git:hover {
   background-color: #555555;
 }
 
@@ -137,12 +161,19 @@ body {
   color: black;
 }
 
-.hero-section-btn > button:nth-child(2){
+#home-section-git{
   background-color: rgba(3, 29, 52, 0.28);
   color: black;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: border-box;
 }
 
-.hero-section-btn > button:nth-child(2):active{
+#home-section-git:active{
   background-color: #2B2B2B;
   color: white;
 }

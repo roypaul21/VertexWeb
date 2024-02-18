@@ -1,18 +1,27 @@
+import { HashLink } from "react-router-hash-link"
 
 export default function HeroSection() {
     return(
         <section className="hero-section">
             <div className="hero-section-container">
                 <div className="hero-section-left-container">
-                    <div className="hero-section-header">
-                        <h1 data-aos="fade-down">VERTEX</h1>
-                        <div className="hero-section-header-shadow" data-aos="fade-down" data-aos-delay="200">
-                            <h1>VERTEX</h1>
+                    <div className="hero-section-header-container">
+                        <div className="hero-section-header">
+                            <h1 data-aos="fade-down">VERTEX</h1>
+                            <div className="hero-section-header-shadow" data-aos="fade-down" data-aos-delay="200">
+                                <h1>VERTEX</h1>
+                            </div>
+                        </div>
+                        <div className="hero-section-text" data-aos="fade-down">
+                            <p>EQUIPMENT</p>
+                            <p>MEDICAL</p>    
                         </div>
                     </div>
                     <div className="hero-section-btn">
                         <button data-aos="fade-right" data-aos-delay="400">About Us</button>
-                        <button data-aos="fade-left" data-aos-delay="400">Get in Touch</button>
+                        <HashLink to="#footerSection" smooth>
+                            <button id="home-section-git" data-aos="fade-left" data-aos-delay="400">Get in Touch</button>
+                        </HashLink>
                     </div>
                 </div>
                 <div className="hero-section-right-container">
