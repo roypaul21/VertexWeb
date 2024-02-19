@@ -1,3 +1,4 @@
+
 import { HashLink } from "react-router-hash-link"
 
 export default function HeroSection() {
@@ -26,12 +27,12 @@ export default function HeroSection() {
                 </div>
                 <div className="hero-section-right-container">
                     <div className="hero-section-vid-column">
-                    <div className="hero-section-vid-container container-vid-big" data-aos="fade-down" data-aos-delay="700">
-                            <video src="./videos/vertex-vid1.mp4" autoPlay loop muted />
-                    </div>
-                    <div className="hero-section-vid-container container-vid-small" data-aos="fade-down" data-aos-delay="850">
-                            <video src="./videos/vertex-vid2.mp4" autoPlay loop muted />
-                    </div>
+                        <div className="hero-section-vid-container container-vid-big" data-aos="fade-down" data-aos-delay="700">
+                                <video src="./videos/vertex-vid1.mp4" autoPlay loop muted />
+                        </div>
+                        <div className="hero-section-vid-container container-vid-small" data-aos="fade-down" data-aos-delay="850">
+                                <video src="./videos/vertex-vid2.mp4" autoPlay loop muted />
+                        </div>
                     </div>
                     
                     <div className="hero-section-vid-column">
@@ -65,6 +66,12 @@ export default function HeroSection() {
                     <div className="hero-section-vid-container container-vid-big" data-aos="fade-down" data-aos-delay="1900">
                             <video src="./videos/vertex-vid11.mp4" autoPlay loop muted />
                     </div>
+                    </div>
+                    <div className="hero-section-btn-mobile">
+                        <button data-aos="fade-right" data-aos-delay="400">About Us</button>
+                        <HashLink to="#footerSection" smooth>
+                            <button id="home-section-git-mobile" data-aos="fade-left" data-aos-delay="400">Get in Touch</button>
+                        </HashLink>
                     </div>
                 </div>
             </div>
