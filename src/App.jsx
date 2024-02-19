@@ -35,7 +35,7 @@ function App() {
         :
         <>
           <Navbar />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<section style={{backgroundColor:"white", width:"100%", height:"100vh"}}></section>}>
             <RouterProvider router={router} />
           </Suspense>
           <Footer />
